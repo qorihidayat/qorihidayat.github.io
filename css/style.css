@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
 body{
-  overflow-x: hidden;
   font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -168,15 +167,15 @@ hr{
 
 @media only screen and (max-width: 600px) {
   .sc1{
-    margin-left: 50px;
+    margin-left: 1px;
   }
 
   .sc2{
-    margin-left: 50px;
+    margin-left: 1px;
   }
 
   .sc3{
-    margin-left: 50px;
+    margin-left: 1px;
   }
 }
 
@@ -256,11 +255,11 @@ animation-duration: 2s;
 #jasa{
   background-image: url(../img/doodles.png);
   background-attachment:fixed;
-  height: 600px;
+  min-height: 400px;
 }
 
 .jasa{
-  margin-top: 50px;
+
 }
 
 .collapsible-header, .collapsible{
@@ -277,22 +276,26 @@ animation-duration: 2s;
 font-weight: bold;
 }
 
-.collapsible-header i{
-margin-top: 20px;
-}
-
 .collapsible{
   background-color: #5d8e5b;
+}
+
+@media only screen and (max-width: 600px) {
+#jasa{
+padding: 50px 0 50px 0;
+min-height: 700px;
+}
 }
 
 /* -------------------------exp---------------- */
 #exp{
   color: white;
-}
-
-
-.exp1{
-  margin-top: 120px;
+  background-image: url(../img/computerijo4.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 300px;
+  padding-top: 50px;
 }
 
 .exp1 i{
@@ -302,9 +305,7 @@ margin-top: 20px;
 }
 
 @media only screen and (max-width: 600px) {
-  .exp1{
-    margin-top: 50px;
-  }
+
 }
 
 
@@ -365,8 +366,7 @@ padding: 100px;
 /* -------------------------INVIT---------------- */
 #invit{
   background-color: #416444;
-  height: 700px;
-  margin-top: -20px;
+  min-height: 700px;
 }
 
 #invit .cp1{
@@ -391,12 +391,22 @@ padding: 100px;
 }
 
 .cp2 h4{
+text-align: center;
 color: #171717;
-margin-bottom: 60px;
+margin-bottom: 30px;
 font-weight: bold;
 }
 
+.cp2 p{
+    text-align: justify;
+}
+
 @media only screen and (max-width: 600px) {
+  #invit{
+    background-color: #416444;
+    min-height: 600px;
+  }
+
   #invit .cp1{
   margin: auto;
   opacity: 0;
@@ -404,7 +414,7 @@ font-weight: bold;
 
   #invit .cp2{
   margin: auto;
-  margin-top: -400px;
+  margin-top: -450px;
   width: auto;
   height: auto;
   }
@@ -506,7 +516,6 @@ form .btn{
   background-color: #B8B598;
   padding: 1px;
   box-sizing: content-box;
-  max-height: 80px;
 }
 
 .copyright{
