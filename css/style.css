@@ -318,12 +318,11 @@ margin-top: 20px;
 #portfolio .card{
   opacity: 0;
   transition: 2s;
-  transform: translate(0, -40px);
 }
 
 #portfolio .card.muncul{
   opacity: 1;
-  transform: translate(0, 0);
+
 }
 
 .portfolio{
@@ -427,7 +426,7 @@ padding-bottom: 30px;
     color: #416444;
     transition: 1s;
     opacity: 0;
-    transform: rotate(90deg);
+
 }
 
 .sHead h3{
@@ -437,7 +436,6 @@ padding-bottom: 30px;
 
 #sertifikat .sertifikat.muncul{
   opacity: 1;
-  transform: rotate(0);
 }
 
 .sertifikat .card .card-image{
