@@ -35,7 +35,6 @@ $(document).ready(function() {
 
 $(window).scroll(function() {
   var wScroll = $(this).scrollTop();
-  console.log(wScroll);
 
   if (wScroll > $('#portfolio').offset().top - 400) {
       $('#portfolio .card').each(function(i) {
@@ -50,6 +49,12 @@ $(window).scroll(function() {
       $('.skillcard').each(function(i) {
           setTimeout(function() {
               $('.skillcard').eq(i).addClass('muncul');
+          }, 300 * (i+1));
+      });
+
+      $('.determinate').each(function(i) {
+          setTimeout(function() {
+              $('.determinate').eq(i).addClass('muncul');
           }, 300 * (i+1));
       });
 
@@ -70,3 +75,25 @@ $(window).ready(function() {
     $('.wrapper').addClass('wrapAnimate');
     $('.wrapper2').addClass('wrapAnimate');
 });
+// -------------------Google Sheet------------
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzc50y39fNw3npPV2PdKOmGcw3c9mdtWLb-VSluSdz1QcuJcIEdyfphteJbvz_sonplrQ/exec'
+const form = document.forms['contactme'];
+const loading = document.querySelector('.loading');
+const alert = document.querySelector('.alert');
+
+ form.addEventListener('submit', e => {
+   e.preventDefault()
+   //tambahkan loading
+   loading.classList.add('muncul');
+   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+     .then(response => {
+       //hapus loading
+       loading.classList.remove('muncul');
+       //tambahkan alert
+       alert.classList.add('muncul');
+       //reset form
+       form.reset();
+       console.log('Success!', response)
+     })
+     .catch(error => console.error('Error!', error.message))
+ })

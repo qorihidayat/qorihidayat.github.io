@@ -2,53 +2,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
-body{
+body {
   font-family: 'Josefin Sans', sans-serif;
 }
 
-nav{
+nav {
   background-color: #416444;
 }
 
-.brand-logo{
+.brand-logo {
   margin-left: 30px;
   font-family: 'Russo One', sans-serif;
   font-size: 20px !important;
 }
 
 @media only screen and (max-width: 800px) {
-.brand-logo{
-  font-size: 15px !important;
-  margin-left: 0;
-}
+  .brand-logo {
+    font-size: 15px !important;
+    margin-left: 0;
+  }
 }
 
-#nav-mobile{
+#nav-mobile {
   margin-right: 30px;
   font-weight: bold;
 }
 
-nav a{
+nav a {
   color: #B8B598 !important;
 }
 
 /* --------------------------jmbtrn------------------------- */
-#jmbtrn{
+#jmbtrn {
   background-color: #416444;
   height: 630px;
   background-attachment: fixed;
 }
 
-.sidenav{
+.sidenav {
   background-color: #B8B598;
 }
 
-.sidenav li a{
+.sidenav li a {
   font-weight: bold;
   color: #416444;
 }
 
-.wrapper{
+.wrapper {
   margin-top: 50px;
   margin-left: 10px;
   color: #B8B598;
@@ -59,18 +59,17 @@ nav a{
   opacity: 0;
 }
 
-
-.wrapper h1{
+.wrapper h1 {
   font-weight: bold;
   font-family: 'Stick No Bills', sans-serif;
 }
 
-.wrapper p{
+.wrapper p {
   text-align: justify;
   text-indent: 20px;
 }
 
-.wrapper a{
+.wrapper a {
   width: 100%;
   height: 50px;
   padding: 5px;
@@ -82,14 +81,10 @@ nav a{
 }
 
 @media only screen and (max-width: 600px) {
- .wrapper a{
-
- }
+  .wrapper a {}
 }
 
-
-
-.wrapper2{
+.wrapper2 {
   width: 22%;
   background-image: url(../img/fotoq.jpg);
   background-size: cover;
@@ -104,16 +99,16 @@ nav a{
   opacity: 0;
 }
 
-.wrapAnimate{
- transform: translate(0, 0);
- opacity: 1;
+.wrapAnimate {
+  transform: translate(0, 0);
+  opacity: 1;
 }
 
-.foto{
+.foto {
   height: 400px;
 }
 
-.wrapper3{
+.wrapper3 {
   width: 20%;
   height: 700px;
   margin-top: -100px;
@@ -121,113 +116,114 @@ nav a{
   background-color: #B8B598 !important;
 }
 
-
 /* -----------------SKILL------------------ */
-#skill{
-background-image: url(../img/pattern3.png);
-background-attachment:fixed;
-padding-bottom: 30px;
+#skill {
+  background-image: url(../img/pattern3.png);
+  background-attachment: fixed;
+  padding-bottom: 30px;
 }
 
-.skill{
+.skill {
   color: #416444;
 }
 
-.skill h3{
+.skill h3 {
   font-weight: bold;
 }
 
-hr{
+hr {
   width: 50px;
   height: 5px;
   background-color: #363222;
   border: none;
 }
 
-.skillcard{
+.skillcard {
   width: 300px;
+  min-height: 320px;
   margin-top: 30px;
   opacity: 0;
   transition: 2s;
   transform: translate(0, -40px);
 }
 
-.skillcard.muncul{
+.skillcard.muncul {
   opacity: 1;
   transform: translate(0, 0);
 }
 
-.sc1{
+.sc1 {
   margin-left: -100px;
 }
 
-.sc3{
+.sc3 {
   margin-left: 100px;
 }
 
 @media only screen and (max-width: 600px) {
-  .sc1{
+  .sc1 {
     margin-left: 1px;
   }
 
-  .sc2{
+  .sc2 {
     margin-left: 1px;
   }
 
-  .sc3{
+  .sc3 {
     margin-left: 1px;
   }
 }
 
-.skillcard i{
- padding: 20px;
- border-radius: 50%;
- border : 10px solid #416444;
- transition: .5s;
+.skillcard i {
+  padding: 20px;
+  border-radius: 50%;
+  border: 10px solid #416444;
+  transition: .5s;
 }
 
-.skillcard i:hover{
-  border : 10px solid #78a17f;
+.skillcard i:hover {
+  border: 10px solid #78a17f;
   background-color: #416444;
   color: white;
   cursor: pointer;
 }
 
-.determinate{
-animation-name: determinate;
-animation-duration: 2s;
+.determinate.muncul {
+  animation-name: determinate;
+  animation-duration: 2s;
 }
 
 @keyframes determinate {
-  from {width: 0%;}
-  to {width: 80%;}
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 80%;
+  }
 }
 
 /* -------------------------Pengalaman Kerja---------------- */
-#pk{
+#pk {
   background-color: #416444;
   color: #B8B598;
   margin-top: -20px;
 }
 
-.pk1 h3{
+.pk1 h3 {
   font-weight: bold;
   font-family: 'Stick No Bills', sans-serif;
 }
 
-.pk5 i, .pk5 p, .pk5 h5{
-}
+.pk5 i, .pk5 p, .pk5 h5 {}
 
-.pk5 p{
+.pk5 p {}
 
-}
-
-.pk5 i{
+.pk5 i {
   margin-top: 10px;
 }
 
-
-.pk5 .card-panel{
+.pk5 .card-panel {
   height: 300px;
   background-color: #B8B598;
   border: none;
@@ -237,58 +233,66 @@ animation-duration: 2s;
 }
 
 @media only screen and (max-width: 600px) {
-.pk5 i{
-  margin-top: 30px;
+  .pk5 i {
+    margin-top: 30px;
+  }
+
+  .pk5 .card-panel {
+    min-height: 900px;
+  }
 }
-.pk5 .card-panel{
-  height: 700px;
-}}
 
 @keyframes animationWidth {
-  from {width: 0%;}
-  to {width: 100%;}
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
 }
 
-
-
 /* -------------------------Jasa---------------- */
-#jasa{
+#jasa {
   background-image: url(../img/doodles.png);
-  background-attachment:fixed;
+  background-attachment: fixed;
   min-height: 400px;
 }
 
-.jasa{
+.jasa {}
 
-}
-
-.collapsible-header, .collapsible{
+.collapsible-header, .collapsible {
   border-radius: 30px;
   box-shadow: none;
   border: none;
 }
 
-.collapsible-header{
-    background-color: #B8B598;
+.collapsible-header {
+  background-color: #B8B598;
 }
 
-.collapsible-header h5{
-font-weight: bold;
+.collapsible-header h5 {
+  font-weight: bold;
 }
 
-.collapsible{
+.collapsible-body p {
+  color: #d6dabc;
+  text-align: justify;
+}
+
+.collapsible {
   background-color: #5d8e5b;
 }
 
 @media only screen and (max-width: 600px) {
-#jasa{
-padding: 50px 0 50px 0;
-min-height: 700px;
-}
+  #jasa {
+    padding: 50px 0 50px 0;
+    min-height: 700px;
+  }
 }
 
 /* -------------------------exp---------------- */
-#exp{
+#exp {
   color: white;
   background-image: url(../img/computerijo4.jpg);
   background-size: cover;
@@ -296,80 +300,85 @@ min-height: 700px;
   background-attachment: fixed;
   min-height: 300px;
   padding-top: 50px;
+  padding-bottom: 30px;
 }
 
-.exp1 i{
+.exp1 i {
   padding: 10px;
   border: 10px solid #aad9ac;
   border-radius: 50%;
+  color: #d6dabc;
 }
 
-@media only screen and (max-width: 600px) {
-
+.exp1 h5, .exp1 p {
+  color: #d6dabc;
 }
 
+@media only screen and (max-width: 600px) {}
 
 /* -------------------------Portfolio---------------- */
-#portfolio{
-    background-image: url(../img/pattern2.jpg);
-    background-attachment:fixed;
-    padding-bottom: 30px;
+#portfolio {
+  background-image: url(../img/pattern3.png);
+  background-attachment: fixed;
+  padding-bottom: 30px;
 }
 
-#portfolio .card{
+#portfolio .card {
   opacity: 0;
   transition: 2s;
 }
 
-#portfolio .card.muncul{
+#portfolio .card.muncul {
   opacity: 1;
-
 }
 
-.portfolio{
+#portfolio .card-content p:nth-child(1) {
+  text-align: justify;
+  color: #2e2e2e;
+}
+
+.portfolio {
   color: #416444;
 }
 
-.wrapportfolio{
-padding: 100px;
+.wrapportfolio {
+  padding: 100px;
 }
 
-.wrapportfolio .card-image{
-
-}
+.wrapportfolio .card-image {}
 
 @media only screen and (max-width: 600px) {
-  .wrapportfolio{
-  padding: 0;
+  .wrapportfolio {
+    padding: 0;
   }
 }
 
-.portfolio h3{
+.portfolio h3 {
   font-weight: bold;
 }
 
-.portfoliobtn{
+.portfoliobtn {
   border-radius: 10px;
   background-color: #416444;
   width: 100%;
 }
 
-.portfoliobtn:hover{
+.portfoliobtn:hover {
   background-color: #B8B598;
 }
 
-.card-content h5{
+.card-content h5 {
   font-weight: bold;
   color: rgb(44, 64, 49);
 }
 
 /* -------------------------INVIT---------------- */
-#invit{
+#invit {
   background-color: #416444;
   min-height: 700px;
 }
 
-#invit .cp1{
+#invit .cp1 {
   margin-top: 100px;
   border-radius: 30px;
   width: 80%;
@@ -379,7 +388,7 @@ padding: 100px;
   background-position: center;
 }
 
-#invit .cp2{
+#invit .cp2 {
   padding: 50px;
   text-align: center;
   margin-left: 400px;
@@ -390,75 +399,77 @@ padding: 100px;
   background-color: #B8B598;
 }
 
-.cp2 h4{
-text-align: center;
-color: #171717;
-margin-bottom: 30px;
-font-weight: bold;
+#invit p {
+  color: #2e2e2e;
 }
 
-.cp2 p{
-    text-align: justify;
+.cp2 h4 {
+  text-align: center;
+  color: #171717;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.cp2 p {
+  text-align: justify;
 }
 
 @media only screen and (max-width: 600px) {
-  #invit{
+  #invit {
     background-color: #416444;
     min-height: 600px;
   }
 
-  #invit .cp1{
-  margin: auto;
-  opacity: 0;
+  #invit .cp1 {
+    margin: auto;
+    opacity: 0;
   }
 
-  #invit .cp2{
-  margin: auto;
-  margin-top: -450px;
-  width: auto;
-  height: auto;
+  #invit .cp2 {
+    margin: auto;
+    margin-top: -450px;
+    width: auto;
+    height: auto;
   }
 
-  #invit{
+  #invit {
     height: 500px;
   }
 }
 
 /* -------------------------SERTIFIKAT---------------- */
-#sertifikat{
-background-image: url(../img/pattern1.jpg);
-background-attachment:fixed;
-padding-bottom: 30px;
+#sertifikat {
+  background-image: url(../img/pattern1.jpg);
+  background-attachment: fixed;
+  padding-bottom: 30px;
 }
 
-
-.sertifikat{
-    color: #416444;
-    transition: 1s;
-    opacity: 0;
-
+.sertifikat {
+  color: #416444;
+  transition: 1s;
+  opacity: 0;
 }
 
-.sHead h3{
-    color: #416444;
-    font-weight: bold;
+.sHead h3 {
+  color: #416444;
+  font-weight: bold;
 }
 
-#sertifikat .sertifikat.muncul{
+#sertifikat .sertifikat.muncul {
   opacity: 1;
 }
 
-.sertifikat .card .card-image{
+.sertifikat .card .card-image {
   border: 5px solid #416444;
   border-radius: 5px;
 }
 
-.sertifikat .card .card-image:hover{
+.sertifikat .card .card-image:hover {
   border: 5px solid #B8B598;
 }
 
 /* -------------------------Contact---------------- */
-#contact{
+#contact {
   background-image: url(../img/computerijo2.jpg);
   background-size: cover;
   background-position: center;
@@ -466,62 +477,78 @@ padding-bottom: 30px;
   padding: 30px 0 30px 0;
 }
 
-.contact{
+.contact {
   margin-top: 50px;
 }
 
-.contact-email{
+.contact-email {
   background-color: #B8B598;
 }
 
-.contact-email h5{
+.contact-email h5 {
   font-weight: bold;
-    color: #2e2e2e;
+  color: #2e2e2e;
 }
 
-.contact-email p, .contact-email i{
-    color: #2e2e2e;
+.contact-email p, .contact-email i {
+  color: #2e2e2e;
 }
 
-.icon-contact a{
+.icon-contact a {
   text-align: center;
   color: #2e2e2e;
 }
 
-.icon-contact a:hover{
-  color : salmon;
+.icon-contact a:hover {
+  color: salmon;
 }
 
-.icon-contact a:nth-child(2), .icon-contact a:nth-child(3), .icon-contact a:nth-child(4){
+.icon-contact a:nth-child(2), .icon-contact a:nth-child(3), .icon-contact a:nth-child(4) {
   margin-left: 20px;
 }
 
-form .btn{
+form .btn {
   background-color: #6b7a4f;
   width: 100%;
 }
 
-.contactme h5{
+.contactme h5 {
   font-weight: bold;
   color: #2e2e2e;
 }
 
-.message h5{
+.message h5 {
   font-weight: bold;
   color: #2e2e2e;
+}
+
+.alert {
+  display: none;
+}
+
+.alert.muncul {
+  display: block;
+}
+
+.loading {
+  display: none;
+}
+
+.loading.muncul {
+  display: block;
 }
 
 /* -------------------------Copyright---------------- */
-#copyright{
+#copyright {
   background-color: #B8B598;
   padding: 1px;
   box-sizing: content-box;
 }
 
-.copyright{
+.copyright {
   font-weight: bold;
 }
 
-.copyright p{
+.copyright p {
   padding-top: 20px;
 }

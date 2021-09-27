@@ -46,7 +46,7 @@
   <section id="jmbtrn">
     <div class="row">
       <div class="col m12 s12">
-        <div class="col m5 s6 wrapper">
+        <div class="col m5 s8 wrapper">
           <h1>Frontend Dev</h1>
           <p>Saya adalah orang yang baru belajar Web Designer, Frontend Web Developer dan Junior Backend Developer. Terampil dalam HTML5, CSS, Bootstrap, JavaScript dan PHP Native. Saat ini saya adalah mahasiswa aktif di Universitas Nusa Mandiri.</p>
           <a href="#contact" class="waves-effect waves-light btn transparent">Hubungi Saya</a>
@@ -71,9 +71,9 @@
         </div>
         <div class="col m4 s12">
           <div class="card-panel skillcard center sc1">
-            <i class="material-icons medium">desktop_windows</i>
-            <h5>Web Desain</h5>
-            <p>Html, Css, Bootstrap 4, Materialize</p>
+            <i class="material-icons medium">developer_mode</i>
+            <h5>Web Dev</h5>
+            <p>Html, Css, Bootstrap, Materialize, JavaScript, PHP Native</p>
             <div class="progress">
               <div class="determinate" style="width: 80%"></div>
             </div>
@@ -187,34 +187,34 @@
 
   <!-- -------Exp--------- -->
   <section id="exp">
-      <div class="container">
-        <div class="row">
-          <!-- -----------CONTENT----------- -->
-          <div class="col m3 s6 center exp1">
-            <i class="material-icons medium">check</i>
-            <h5>20</h5>
-            <p>WORK</p>
-          </div>
+    <div class="container">
+      <div class="row">
+        <!-- -----------CONTENT----------- -->
+        <div class="col m3 s6 center exp1">
+          <i class="material-icons medium">check</i>
+          <h5>20</h5>
+          <p>WORK</p>
+        </div>
 
-          <div class="col m3 s6 center exp1">
-            <i class="material-icons medium">school</i>
-            <h5>50</h5>
-            <p>CERTIFIKAT</p>
-          </div>
+        <div class="col m3 s6 center exp1">
+          <i class="material-icons medium">school</i>
+          <h5>50</h5>
+          <p>CERTIFIKAT</p>
+        </div>
 
-          <div class="col m3 s6 center exp1">
-            <i class="material-icons medium">people</i>
-            <h5>25</h5>
-            <p>CLIENTS</p>
-          </div>
+        <div class="col m3 s6 center exp1">
+          <i class="material-icons medium">people</i>
+          <h5>25</h5>
+          <p>CLIENTS</p>
+        </div>
 
-          <div class="col m3 s6 center exp1">
-            <i class="material-icons medium">star</i>
-            <h5>100</h5>
-            <p>RATINGS</p>
-          </div>
+        <div class="col m3 s6 center exp1">
+          <i class="material-icons medium">star</i>
+          <h5>100</h5>
+          <p>RATINGS</p>
         </div>
       </div>
+    </div>
     </div>
   </section>
 
@@ -266,8 +266,8 @@
           </div>
           <div class="card-content">
             <h5>AkaStore</h5>
-            <p>AkaStore adalah Website E-Commerce pertama saya, website ini dibuat dengan bootsrap 3 dan php native.</p>
-            <p style="font-size:12px; margin-top:10px;"><span style="color:salmon;">Html, Css, Bootstrap3, PHP Native</span> / 03 Maret 2020</p>
+            <p>AkaStore adalah Website E-Commerce pertama saya, website ini dibuat hanya dengan css dan php native.</p>
+            <p style="font-size:12px; margin-top:10px;"><span style="color:salmon;">Html, Css, PHP Native</span> / 03 Maret 2020</p>
           </div>
           <div class="card-action">
             <a href="#" target="_blank" class="waves-effect waves-light btn portfoliobtn">Go To Website</a>
@@ -415,12 +415,16 @@
           </ul>
         </div>
         <div class="col m7 s12">
-          <form class="" method="post">
+          <form name="contactme">
             <div class="card-panel message">
               <h5>Kirim Pesan</h5>
+              <div class="card-panel alert green lighten-3">
+                <i class="material-icons tiny">check</i>
+                <span style="font-weight:bold;">Terimakasih!</span>&nbsp;&nbsp;<span>Pesan Anda sudah terkirim</span>
+              </div>
               <div class="input-field">
-                <input id="username" type="text" class="validate" name="username" required>
-                <label for="username">Username</label>
+                <input id="username" type="text" class="validate" name="nama" required>
+                <label for="username">Nama</label>
               </div>
               <div class="input-field">
                 <input id="email" type="email" class="validate" name="email" required>
@@ -431,10 +435,13 @@
                 <label for="handphone">handphone</label>
               </div>
               <div class="input-field">
-                <textarea id="message" class="materialize-textarea" required></textarea>
-                <label for="message">Textarea</label>
+                <textarea id="message" class="materialize-textarea" name="pesan" required></textarea>
+                <label for="message">Pesan</label>
               </div>
               <button type="submit" name="button" class="btn">Send</button>
+              <div class="progress loading">
+                <div class="indeterminate"></div>
+              </div>
           </form>
         </div>
       </div>
