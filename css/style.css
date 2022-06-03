@@ -318,6 +318,7 @@ hr {
 
 /* -------------------------Portfolio---------------- */
 #portfolio {
+  text-align: justify;
   background-image: url(../img/pattern3.png);
   background-attachment: fixed;
   padding-bottom: 30px;
